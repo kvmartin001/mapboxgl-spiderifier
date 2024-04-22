@@ -175,11 +175,10 @@
 
     // Utility
     function eachFn(array, iterator) {
-      var i = 0;
       if (!array || !array.length) {
         return [];
       }
-      for (i = 0; i < array.length; i++) {
+      for (let i = 0; i < array.length; i++) {
         iterator(array[i], i);
       }
     }
@@ -188,7 +187,7 @@
       if (!count) {
         return [];
       }
-      for (var i = 0; i < count; i++) {
+      for (let i = 0; i < count; i++) {
         iterator(i);
       }
     }
